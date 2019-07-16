@@ -8,50 +8,61 @@
     <title>Crystal Collector</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript.js"></script>
-
-    
 </head>
 
 <body>
-        <div class="container">
-                <div class="row">
-                    <div class="offset-md-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <h1>Welcome to Crystal Collector!</h1>
-                        <p>Here's how to play the game</p>
-                        <p>1. Under Number to Achieve, you will be given a random number at the start of the game.</p>
-                        <p>2. There are four crystals below. By clicking on the crystals, you will add the numbers until you get
-                            to that specific number that was given.</p>
-                        <p>3. You will win if your number matches with the Number to Achieve.</p>
-                        <p>4. You will lose if your number reaches a value that is higher than the Number to Achieve.</p>
-                    </div>
-                </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1>Welcome to Crystal Collector!</h1>
+                <p>Here's how to play the game</p>
+                <p>1. Under Number to Achieve, you will be given a random number at the start of the game.</p>
+                <p>2. There are four crystals below. By clicking on the crystals, you will add the numbers until you get
+                    to that specific number that was given.</p>
+                <p>3. You will win if your number matches with the Number to Achieve.</p>
+                <p>4. You will lose if your number reaches a value that is higher than the Number to Achieve.</p>
             </div>
-        
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p id="crystalOne">crystal one</p>
-                    </div>
-            
-            
-                    <div class="col">
-                        <p id="crystalTwo">crystal two</p>
-                    </div>
-            
-            
-                    <div class="col">
-                        <p id="crystalThree">crystal three</p>
-                    </div>
-            
-                    <div class="col">
-                        <p id="crystalFour">crystal four</p>
-                    </div>
-            
-                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p id="crystal0">crystal one
+                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                </p>
             </div>
+
+
+            <div class="col">
+                <p id="crystal1">crystal two
+                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                </p>
+            </div>
+
+
+            <div class="col">
+                <p id="crystal2">crystal three
+                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                </p>
+            </div>
+
+            <div class="col">
+                <p id="crystal3">crystal four
+                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    currentScore <div id="currentScore">0</div>
+    Wins: <div id="wins">0</div>
+    Losses: <div id="losses">0</div>
+    targetScore <div id="targetScore">0</div>
+    <!-- Add this to the bottom of the HTML once all of the HTML elements are defined. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript.js"></script>
 
 </body>
 

@@ -1,0 +1,11 @@
+#crystals {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+#crystal {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    align-items: center;
+}
