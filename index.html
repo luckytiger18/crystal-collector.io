@@ -8,6 +8,8 @@
     <title>Crystal Collector</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -16,50 +18,67 @@
         <div class="row">
             <div class="offset-md-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h1>Welcome to Crystal Collector!</h1>
-                <p>Here's how to play the game</p>
-                <p>1. Under Number to Achieve, you will be given a random number at the start of the game.</p>
-                <p>2. There are four crystals below. By clicking on the crystals, you will add the numbers until you get
-                    to that specific number that was given.</p>
-                <p>3. You will win if your number matches with the Number to Achieve.</p>
-                <p>4. You will lose if your number reaches a value that is higher than the Number to Achieve.</p>
+                <h6>Here's how to play the game</h6>
+                <h6>1. Under currentScore, you will be given a random number at the start of the game.</h6>
+                <h6>2. There are four crystals below. By clicking on the crystals, you will add the numbers until you get
+                    to that specific number that was given.</h6>
+                <h6>3. You will win if your number matches with the Number to Achieve.</h6>
+                <h6>4. You will lose if your number reaches a value that is higher than the Number to Achieve.</h6>
             </div>
         </div>
     </div>
+    <div class="row numbers">
+        <div class="offset-md-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <p> Your Score: </p>
+            <div id="currentScore">0</div>
+            <div class="col">
+                <p>Wins: </p>
+                <div id="wins">0</div>
+                <div class="col">
+                    <p>Losses: </p>
+                    <div id="losses">0</div>
+                    <div class="col-sm">
+                        <p> Target Score: </p>
+                        <div id="targetScore">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="container">
         <div class="row">
             <div class="col">
-                <p id="crystal0">crystal one
-                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                <p id="crystal0">Blue Crystal
+                    <img src="assets/images/Blue-diamond.jpg" alt="Blue-diamond" width=100px>
                 </p>
             </div>
 
 
             <div class="col">
-                <p id="crystal1">crystal two
-                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                <p id="crystal1">Green Crystal
+                    <img src="assets/images/green-diamond.jpg" alt="green-diamond" width=100px>
                 </p>
             </div>
 
 
             <div class="col">
-                <p id="crystal2">crystal three
-                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                <p id="crystal2">Pink Crystal
+                    <img src="assets/images/pink-diamond.jpg" alt="pink-diamond" width=100px>
                 </p>
             </div>
 
             <div class="col">
-                <p id="crystal3">crystal four
-                    <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" alt="" width=100px>
+                <p id="crystal3">Yellow Crystal
+                    <img src="assets/images/yellow-diamond.jpg" alt="yellow-diamond" width=100px>
                 </p>
             </div>
 
         </div>
     </div>
-    currentScore <div id="currentScore">0</div>
-    Wins: <div id="wins">0</div>
-    Losses: <div id="losses">0</div>
-    targetScore <div id="targetScore">0</div>
+
     <!-- Add this to the bottom of the HTML once all of the HTML elements are defined. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript.js"></script>

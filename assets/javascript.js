@@ -2,7 +2,6 @@
 function initial() {
     var randomNum = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     $("#targetScore").text(randomNum);
-    console.log(randomNum)
     crystalGenerator()
 }
 
@@ -10,10 +9,9 @@ function initial() {
 function crystalGenerator(){
     for (var i= 0; i < 4; i++){
         var crystalNum = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-        console.log(crystalNum)
+        
         var crystalName = "#crystal" + i;
     
-        console.log(crystalName)
         $(crystalName).attr("data-value", crystalNum); //setting the value. without the comma is getting the value.
     }
 }
@@ -25,14 +23,12 @@ function checkGameStatus() {
     targetScore = parseInt(targetScore);
 
     if (currentScore == targetScore) {
-        console.log("winner chicken dinner")
         var winnerNum = $("#wins").text()
         winnerNum = parseInt(winnerNum);
         winnerNum++;
         $("#wins").text(winnerNum);
         reset();
     }else if (currentScore > targetScore) {
-        console.log("lost")
         var lossesNum = $("#losses").text()
         lossesNum = parseInt(lossesNum);
         lossesNum++;

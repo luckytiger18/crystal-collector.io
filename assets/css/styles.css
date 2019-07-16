@@ -1,11 +1,41 @@
-#crystals {
-    border: 2px solid black;
-    height: 200px;
-    width: 200px;
+body {
+    background: url("/Users/annieluc/Documents/GitHub/crystal-collector.io/assets/images/dust_scratches/dust_scratches.png");
+font-family: 'Prosto One', cursive;
 }
-#crystal {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
-    align-items: center;
+
+img {
+    border: 2px solid black;
+}
+
+p {
+    text-align: center;
+ }
+
+#currentScore {
+   text-align: center;
+   padding-bottom: 35px;
+   border: 3px solid green;
+   background: pink;
+   margin-left: 158px;
+   margin-right: 165px;
+
+}
+
+#wins {
+    text-align: center;
+}
+
+#losses {
+    text-align: center;
+}
+
+#targetScore {
+    text-align: center;
+    padding-bottom: 35px;
+    border: 3px solid green;
+    background: pink;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-bottom: 20px;
+
 }
