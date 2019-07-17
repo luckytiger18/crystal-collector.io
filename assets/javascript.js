@@ -21,6 +21,7 @@ function checkGameStatus() {
     currentScore = parseInt(currentScore);
     var targetScore = $("#targetScore").text()
     targetScore = parseInt(targetScore);
+//todo - need to add an alert for wins and losses
 
     if (currentScore == targetScore) {
         var winnerNum = $("#wins").text()
