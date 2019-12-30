@@ -29,6 +29,7 @@ function checkGameStatus() {
         winnerNum++;
         $("#wins").text(winnerNum);
         reset();
+        $("<div>Test message</div>").dialog();
     }else if (currentScore > targetScore) {
         var lossesNum = $("#losses").text()
         lossesNum = parseInt(lossesNum);
