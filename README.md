@@ -1,6 +1,7 @@
 # Crystals-Collector Game
 
 This is an interactive web browsers game that dynamically updates the HTML with the jQuery library.
+Live link: https://luckytiger18.github.io/crystal-collector.io/
 
 # Here's how to play the game
 1. You will be given a Target Score at the start of the game. 
